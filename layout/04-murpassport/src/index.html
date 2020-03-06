@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Мурмаркет</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link href="resources/css/normalize.css" rel="stylesheet" />
+    <link href="resources/css/header.css" rel="stylesheet" />
+    <link href="resources/css/main.css" rel="stylesheet" />
+    <link href="resources/css/cat-card.css" rel="stylesheet" />
+    <link href="resources/css/content.css" rel="stylesheet" />
+    <link href="resources/css/navigate-bar.css" rel="stylesheet" />
+    <link href="resources/css/cat-card.css" rel="stylesheet" />
+    <link href="resources/css/health-card.css" rel="stylesheet" />
+    <link href="resources/css/gallery-card.css" rel="stylesheet" />
+    <link href="resources/css/back-form-card.css" rel="stylesheet" />
+    <link href="resources/css/footer.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="resources/img/yi.jpg" />
+    <script type="text/javascript" src="./simulation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        Мурмаркет
+      </div>
+    </header>
+    <main>
+      <div class="navigate-bar">
+        <article>Меню</article>
+        <form class="menu-buttons">
+          <div class="label-field">
+            <a href="#info">Данные</a>
+          </div>
+          <div class="label-field">
+            <a href="#health" id="aa">Прививки</a>
+          </div>
+          <div class="label-field">
+            <a href="#gallery">Галерея</a>
+          </div>
+          <div class="label-field">
+            <a href="#back-form">Обратная связь</a>
+          </div>
+        </form>
+      </div>
+      <div class="content">
+        <section class="cat-card " id="info">
+          <figure>
+            <img alt="Кошка Фрося" src="resources/img/kitty_1.jpg" />
+            <figcaption>Фрося</figcaption>
+          </figure>
+          <div class="cat-description">
+            <div class="short-description">
+              <p>Фамилия: Фрусьская</p>
+              <p>Порода: уличная</p>
+              <p>Дата рождения: 17.03.2013</p>
+            </div>
+          </div>
+        </section>
+        <section class="health-card" id="health">
+          <article>Прививки</article>
+          <ol>
+            <li>От злых бактерий.</li>
+            <li>От вредного врождённого характера.</li>
+            <li>От длинных усов</li>
+          </ol>
+        </section>
+        <section class="gallery-card" id="gallery">
+          <article>Галерея</article>
+          <img alt="Кошечка сидящая в траве с цветком" src="resources/img/kitty_1.jpg" />
+          <img alt="Две кошечки смотрящие в небесную высь" src="resources/img/kitty_2.jpg" />
+        </section>
+        <section class="back-form-card" id="back-form">
+          <article>Обратная связь</article>
+          <form class="back-form-class">
+            <textarea id="text-info" placeholder="Ваш комментарий" class="form-text-textarea"></textarea>
+            <label for="text-info" class="form-text">
+              <div class="sr-only">
+                Ваш комментарий
+              </div>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-email"
+              pattern=".+@.+..+"
+              size="30"
+              placeholder="murmur@yandex.ru"
+              required
+            />
+            <label for="email">
+              <div class="sr-only">
+                Ваша почта
+              </div>
+            </label>
+            <label for="submit">
+              <input id="submit" class="submit-button" type="submit" value="Отправить" />
+            </label>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="contact-info">
+        <div class="mails">
+          <div class="mail">
+            <div>
+              Contact information
+            </div>
+            <div>
+              <a href="mailto:niki999922@yandex.ru">niki999922@yandex.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="number">
+          &copy; 2019 &laquo;<a href="https://github.com/niki999922">github.com/niki999922</a
+          >&raquo;
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  width: 850px;
+
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  align-content: flex-start;
+  grid-template-areas: 'navigate-bar content';
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr;
+
+  width: 100%;
+
+  min-height: calc(100vh - 114px);
+
+  border-right: 2px outset black;
+  border-bottom: 2px outset black;
+  border-left: 2px outset black;
+
+  background-image: url('../img/kitties-background.jpg');
+  background-repeat: repeat;
+}

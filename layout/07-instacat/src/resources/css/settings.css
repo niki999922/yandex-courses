@@ -1,0 +1,31 @@
+.settings {
+  margin: 0 404px 25px;
+}
+
+.settings__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 80px;
+
+  fill: gray;
+}
+
+.settings__button:hover {
+  fill: black;
+}
+
+.settings__button_cursor {
+  cursor: pointer;
+}
+
+.settings__rotates-multiply-0,
+.settings__rotates-multiply-90,
+.settings__rotates-multiply-180,
+.settings__rotates-multiply-270,
+.settings__scales-multiply-1,
+.settings__scales-multiply-2,
+.settings__scales-multiply-3 {
+  display: none;
+}

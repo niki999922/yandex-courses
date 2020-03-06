@@ -1,0 +1,98 @@
+.input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+#filter-default:checked ~ .photo .photo__picture_filter {
+  filter: none;
+}
+
+#filter-default:checked ~ .filters .filter-default__name .filter__title {
+  font-weight: bold;
+}
+
+#filter-grayscale:checked ~ .photo .photo__picture_filter {
+  filter: grayscale(100%);
+}
+
+#filter-grayscale:checked ~ .filters .filter-grayscale__name .filter__title {
+  font-weight: bold;
+}
+
+#filter-saturate:checked ~ .photo .photo__picture_filter {
+  filter: saturate(200%);
+}
+
+#filter-saturate:checked ~ .filters .filter-saturate__name .filter__title {
+  font-weight: bold;
+}
+
+#filter-contrast-brightness:checked ~ .photo .photo__picture_filter {
+  filter: contrast(175%) brightness(103%);
+}
+
+#filter-contrast-brightness:checked ~ .filters .filter-contrast-brightness__name .filter__title {
+  font-weight: bold;
+}
+
+#flip-checkbox:checked ~ .photo .photo__picture-flip-wrapper {
+  transform: scale(-1, 1);
+}
+
+#logotype-button:active ~ .photo .photo__picture_filter {
+  display: none;
+}
+
+#logotype-button:active ~ .photo .photo__picture-origin {
+  display: inline;
+}
+
+#fill-checkbox:checked ~ .photo .photo__picture_filter {
+  width: 525px;
+  height: 525px;
+
+  object-fit: cover;
+}
+
+#rotate-0:checked ~ .photo .photo__picture-rotate-wrapper {
+  transform: rotate(0deg);
+}
+
+#rotate-90:checked ~ .photo .photo__picture-rotate-wrapper {
+  transform: rotate(-90deg) scale(0.7);
+}
+
+#rotate-180:checked ~ .photo .photo__picture-rotate-wrapper {
+  transform: rotate(-180deg);
+}
+
+#rotate-270:checked ~ .photo .photo__picture-rotate-wrapper {
+  transform: rotate(-270deg) scale(0.7);
+}
+
+#rotate-0:checked ~ .settings .settings__rotates-multiply-90,
+#rotate-90:checked ~ .settings .settings__rotates-multiply-180,
+#rotate-180:checked ~ .settings .settings__rotates-multiply-270,
+#rotate-270:checked ~ .settings .settings__rotates-multiply-0 {
+  display: block;
+}
+
+#scale-1:checked ~ .photo .photo__picture-scale-wrapper {
+  transform: scale(1);
+}
+
+#scale-2:checked ~ .photo .photo__picture-scale-wrapper {
+  transform: scale(0.75);
+}
+
+#scale-3:checked ~ .photo .photo__picture-scale-wrapper {
+  transform: scale(0.5);
+}
+
+#scale-1:checked ~ .settings .settings__scales-multiply-2,
+#scale-2:checked ~ .settings .settings__scales-multiply-3,
+#scale-3:checked ~ .settings .settings__scales-multiply-1 {
+  display: block;
+}

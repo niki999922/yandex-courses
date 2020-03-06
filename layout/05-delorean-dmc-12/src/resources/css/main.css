@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'OldLondon';
+  src: local('OldLondon'), url('/src/resources/fonts/OldLondon.ttf');
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold-el {
+  font-weight: bold;
+}
+body {
+  width: 1500px;
+  margin: 30px auto;
+
+  color: black;
+  font-family: 'Times New Roman', serif;
+}
+
+body p {
+  margin: 5px 0;
+}
+
+header .header-title {
+  margin: 0;
+  padding: 4px 0;
+
+  border-bottom: 5px black solid;
+
+  font-family: 'OldLondon', cursive;
+  font-size: 140px;
+  font-weight: normal;
+  text-align: center;
+}
+
+header .header-info {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px black solid;
+}
+
+main {
+  display: grid;
+  align-content: flex-start;
+  grid-template-areas: 'history-news breaking-news day-news';
+  grid-template-columns: 1fr 2fr 1fr;
+
+  column-rule: 1px solid black;
+  font-size: 1.3rem;
+}
+
+main .history-news {
+  margin: 0 10px;
+  padding: 0 10px 0 0;
+
+  border-right: 2px solid black;
+
+  font-family: 'Apple Symbols', fantasy;
+}
+
+main .history-news__title {
+  margin: 10px 0;
+
+  font-size: 1.6em;
+  text-align: center;
+}
+
+main .history-news__content {
+  column-count: 2;
+  column-rule: 1px solid black;
+  font-size: 1em;
+  text-align: justify;
+}
+
+main .breaking-news {
+  padding-right: 5px;
+}
+
+main .breaking-news p {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+main .breaking-news h2 {
+  margin: 10px 0;
+
+  font-size: 2.6em;
+  text-align: center;
+}
+
+main .photo-main {
+  float: left;
+
+  width: 40%;
+  height: 40%;
+  margin: 5px 5px 0 5px;
+}
+
+main .day-news {
+  padding: 5px;
+
+  border-left: 2px solid black;
+
+  font-family: 'Consolas', 'Monaco', monospace;
+
+  text-align: center;
+  word-wrap: break-word;
+}
+
+main .day-news__title {
+  margin: 5px;
+
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .day-news p {
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+#big:checked ~ main {
+  font-size: 1.8rem;
+}
+
+#big:checked ~ header .header-info {
+  font-size: 2.3rem;
+}
+
+#black:checked ~ header,
+#black:checked ~ main,
+#black:checked ~ footer {
+  border-color: #fff;
+
+  background-color: #000;
+  color: #fff;
+}
+
+#black:checked ~ header .border-marker,
+#black:checked ~ main .border-marker,
+#black:checked ~ footer .border-marker {
+  border-color: #fff;
+
+  column-rule: 1px solid #fff;
+}
+
+#italic:checked ~ main,
+#italic:checked ~ footer {
+  font-style: italic;
+}

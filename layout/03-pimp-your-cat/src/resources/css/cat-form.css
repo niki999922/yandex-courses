@@ -1,0 +1,189 @@
+.cat-form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  margin: 10px;
+
+  border-radius: 15px;
+
+  background-image: url('../img/kitties-background-form.jpg');
+  background-repeat: repeat;
+}
+
+.cat-form input[type='radio'] {
+  display: none;
+}
+
+.cat-form-label {
+  grid-column: 2/7;
+
+  margin: 10px;
+
+  border-radius: 15px;
+
+  background: rgba(202, 0, 255, 0.85);
+  color: yellow;
+}
+
+.cat-form-label section h1 {
+  margin: 5px;
+  padding: 10px 10px 0;
+
+  font-size: 45px;
+  text-align: center;
+}
+
+.cat-form-label section h2 {
+  margin: 5px;
+  padding: 10px;
+
+  font-size: 15px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.cat-form-friendly {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 16px 20px;
+}
+
+.cat-form-friendly p {
+  margin: 0 10px;
+
+  font-size: 20px;
+}
+.cat-form-friendly form {
+  flex-grow: 1;
+}
+
+.cat-form-friendly select {
+  width: 100%;
+
+  border: none;
+  border-radius: 11px;
+
+  background-color: #f1f1f1;
+}
+
+.cat-form-with-corm {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  margin: 0 16px;
+
+  border-radius: 15px;
+}
+
+.cat-form-with-corm label {
+  overflow: hidden;
+  flex-basis: 44%;
+
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 0, 16, 0.72);
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.form-email p {
+  font-size: 23px;
+}
+
+.birthday-form p {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 8px;
+
+  font-size: 22px;
+}
+
+.input-form-natural:checked ~ .cat-form-with-corm-section-n {
+  background: olivedrab;
+}
+
+.input-form-synthetic:checked ~ .cat-form-with-corm-section-s {
+  background: olivedrab;
+}
+
+.form-email {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: auto;
+  margin-top: 5px;
+  padding: 0 40px;
+
+  vertical-align: center;
+}
+
+.form-email input {
+  flex-grow: 1;
+
+  width: auto;
+  margin: 17px;
+}
+
+.form-email input:focus {
+  outline: none;
+}
+
+.birthday-form {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px 20px 0;
+}
+
+.birthday-form input[type='date'] {
+  flex-grow: 1;
+
+  margin: 0 5px;
+
+  font-size: 20px;
+}
+
+.cat-form-label-fields input[type='submit'] {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 20px auto;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.cat-form-images {
+  grid-column: 9/12;
+
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.cat-form-images img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+
+  object-fit: cover;
+}

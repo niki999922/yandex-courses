@@ -1,0 +1,35 @@
+footer {
+  display: block;
+
+  margin-top: auto;
+
+  border-top: 2px outset black;
+
+  background-color: rgba(227, 231, 232, 0.28);
+  font-family: 'Lucida Console', serif;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.mail:nth-child(odd) div {
+  margin-bottom: 2px;
+}
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

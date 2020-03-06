@@ -1,0 +1,24 @@
+.photo__picture {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.photo__picture_transition {
+  transition: width 1s, height 1s, transform 1s, filter 2s;
+}
+
+.photo__picture-flip-wrapper,
+.photo__picture-scale-wrapper,
+.photo__picture-rotate-wrapper {
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.photo__picture-origin {
+  display: none;
+}
+
+.photo__picture_filter {
+  width: 700px;
+  height: 525px;
+}

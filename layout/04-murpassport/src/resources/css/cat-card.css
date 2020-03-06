@@ -1,0 +1,105 @@
+.cat-card {
+  box-sizing: border-box;
+  width: 350px;
+  margin: 7px;
+  padding: 10px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 239, 0, 0.96);
+  font-size: 14px;
+  text-align: center;
+}
+
+.cat-card:hover {
+  box-shadow: 0 12px 20px 0 rgba(122, 122, 0, 0.8);
+}
+
+.cat-card figure {
+  margin: 0;
+}
+
+.cat-card figure img {
+  width: 300px;
+  height: 200px;
+
+  border: 2px #e85990 solid;
+  border-radius: 15px;
+}
+
+.cat-card figure figcaption {
+  overflow: hidden;
+
+  font-size: 23px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.short-description {
+  margin-top: 5px;
+
+  text-align: left;
+}
+
+.short-description p {
+  overflow: hidden;
+
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  text-overflow: ellipsis;
+}
+
+.cat-card .cat-long-description {
+  padding-top: 10px;
+
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.cat-switch-class {
+  display: none;
+}
+
+.cat-card .cat-description {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 730px) {
+  .cat-card-filter {
+    display: none;
+    grid-column: 13/13;
+  }
+
+  .cat-card-body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1/13;
+  }
+  .cat-card {
+    margin: 8px auto;
+  }
+
+  .cat-long-description {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1200px) {
+  .cat-card-filter {
+    display: none;
+    grid-column: 13/13;
+  }
+
+  .cat-card-body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: 1/13;
+  }
+
+  .cat-long-description {
+    display: none;
+  }
+}

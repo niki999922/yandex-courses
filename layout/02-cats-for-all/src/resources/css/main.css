@@ -1,0 +1,139 @@
+main {
+  display: grid;
+  align-content: flex-start;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+
+  min-height: calc(100vh - 126px);
+  margin: 50px 10px 0;
+  padding: 10px;
+
+  background-image: url('../img/kitties-background.jpg');
+  background-repeat: repeat;
+}
+
+.cat-card-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-column: 1/10;
+
+  padding: 10px;
+}
+
+input {
+  display: none;
+}
+
+.input-wild:checked ~ .cat-card-body .friendly {
+  display: none;
+}
+
+.input-friendly:checked ~ .cat-card-body .wild {
+  display: none;
+}
+
+.input-all:checked ~ .cat-card-body .wild {
+  display: block;
+}
+
+.input-all:checked ~ .cat-card-body .friendly {
+  display: block;
+}
+
+.input-all:checked ~ .cat-card-filter .filter-category-section.all {
+  background: olivedrab;
+}
+
+.input-friendly:checked ~ .cat-card-filter .filter-category-section.friend {
+  background: olivedrab;
+}
+
+.input-wild:checked ~ .cat-card-filter .filter-category-section.wild {
+  background: olivedrab;
+}
+
+.cat-card-filter {
+  display: flex;
+  flex-direction: column;
+  grid-column: 10/13;
+
+  margin-top: 7px;
+  padding: 12px;
+}
+
+.cat-card-filter .filter-age {
+  margin-bottom: 8px;
+  padding: 5px;
+
+  border-radius: 10px;
+
+  background: #e85990;
+  text-align: center;
+}
+
+.cat-card-filter .filter-age-title {
+  overflow: hidden;
+
+  margin-bottom: 5px;
+  padding-top: 3px;
+
+  font-size: 23px;
+
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.cat-card-filter .filter-age-slider {
+  border-radius: 15px;
+
+  -webkit-appearance: none;
+  background: orange;
+  cursor: pointer;
+  opacity: 1;
+  outline: none;
+}
+
+.cat-card-filter .filter-category {
+  padding: 5px;
+
+  border-radius: 10px;
+
+  background: #e85990;
+  text-align: center;
+}
+
+.cat-card-filter .filter-category-title {
+  overflow: hidden;
+
+  margin: 10px 0px;
+
+  font-size: 22px;
+  text-overflow: ellipsis;
+}
+
+.cat-card-filter .filter-category-sections {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 5px;
+}
+
+.cat-card-filter .filter-category-sections .filter-category-section {
+  overflow: hidden;
+
+  height: 33px;
+  margin: 3px 30px;
+
+  padding: 12px 6px 6px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 0, 16, 0.52);
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}

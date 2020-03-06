@@ -1,0 +1,19 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/18176.ttf) format('TrueType');
+}
+
+.logotype {
+  border-bottom: 1px solid #aeaeae;
+
+  color: rgba(0, 0, 0, 0.93);
+  font-family: logoFont, serif;
+  font-size: 70px;
+  text-align: center;
+}
+
+.logotype__main-letter_color {
+  color: rgba(255, 79, 62, 0.93);
+  font-size: 100px;
+  font-weight: bold;
+}

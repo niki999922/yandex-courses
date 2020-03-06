@@ -1,0 +1,71 @@
+.back-form-card {
+  box-sizing: border-box;
+  width: 350px;
+  margin: 7px;
+  padding: 10px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 239, 0, 0.96);
+  font-size: 14px;
+  text-align: center;
+}
+
+.back-form-card:hover {
+  box-shadow: 0 12px 20px 0 rgba(122, 122, 0, 0.8);
+}
+
+.back-form-card article {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.back-form-card .back-form-class {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 0 0;
+}
+
+.back-form-card .form-text-textarea {
+  width: 300px;
+  height: 200px;
+  margin: 10px auto 0;
+
+  font-size: 25px;
+  resize: none;
+}
+
+.back-form-card .form-email {
+  width: 300px;
+  margin: 10px auto 0;
+
+  font-size: 25px;
+}
+
+.back-form-card label .sr-only {
+  position: absolute;
+
+  overflow: hidden;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.back-form-card .submit-button {
+  width: 300px;
+  height: 50px;
+  margin: 10px 0 0;
+
+  background: chartreuse;
+  cursor: pointer;
+  font-size: 30px;
+}

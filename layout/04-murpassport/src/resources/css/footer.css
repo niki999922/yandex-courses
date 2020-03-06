@@ -1,0 +1,37 @@
+footer {
+  display: block;
+
+  width: 100%;
+
+  margin-top: auto;
+
+  border-right: 2px outset black;
+  border-bottom: 2px outset black;
+
+  border-left: 2px outset black;
+
+  background-color: rgba(227, 231, 232, 0.28);
+  font-family: 'Lucida Console', serif;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

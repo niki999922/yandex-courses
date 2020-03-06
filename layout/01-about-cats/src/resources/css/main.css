@@ -1,0 +1,110 @@
+main {
+  display: block;
+  overflow: scroll;
+
+  height: 87vh;
+}
+
+.cat-button {
+  display: block;
+  overflow: hidden;
+}
+
+label {
+  width: 60px;
+  height: 60px;
+
+  content: 'Список';
+  cursor: pointer;
+}
+
+.cat-card {
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.cat-card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.short-description {
+  margin-top: 5px;
+}
+
+.short-description p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.cat-card .cat-image img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+.cat-card .name {
+  font-size: 23px;
+}
+
+.cat-card .cat-long-description {
+  display: none;
+
+  padding-top: 10px;
+}
+
+.cat-switch-class {
+  display: none;
+}
+
+.cat-switch-class + label {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  margin-top: 2px;
+
+  content: url('../../resources/img/switch-page.png');
+
+  cursor: pointer;
+}
+
+.cat-switch-class:checked ~ .cat-card {
+  display: block;
+
+  width: 90%;
+  height: auto;
+  margin: 10px auto auto;
+}
+
+.cat-switch-class:checked ~ .cat-card .cat-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cat-card .cat-description {
+  padding-top: 10px;
+}
+
+.cat-switch-class:checked ~ .cat-card .short-description {
+  display: none;
+}
+
+.cat-switch-class:checked ~ .cat-card .name {
+  font-size: 40px;
+}
+
+.cat-switch-class:checked ~ .cat-card .cat-long-description {
+  display: inline-block;
+
+  margin-bottom: 5px;
+
+  font-size: 20px;
+}

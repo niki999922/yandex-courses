@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Мурмаркет</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link href="resources/css/normalize.css" rel="stylesheet" />
+    <link href="resources/css/main.css" rel="stylesheet" />
+    <link href="resources/css/cat-form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="cat-form">
+        <div class="cat-form-label">
+          <section>
+            <h1>Забери себе друга!</h1>
+            <h2>Просто заполни небольшую форму</h2>
+            <div class="cat-form-label-fields">
+              <div class="cat-form-friendly">
+                <p>Коммуникабельность:</p>
+                <form>
+                  <input class="input-form-communicate"
+                         type="radio"
+                         name="communicate"
+                         id="communicate">
+                  <label for="communicate">
+                    <select name="country">
+                      <option value="all">Any</option>
+                      <option value="friendly">Friendly</option>
+                      <option value="wild">Wild</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="cat-form-with-corm">
+                <input class="input-form-natural" type="radio" name="corm" id="natural" />
+                <input class="input-form-synthetic" type="radio" name="corm" id="synthetic" />
+                <label for="natural" class="cat-form-with-corm-section-n">
+                  Натуральный корм
+                </label>
+                <label for="synthetic" class="cat-form-with-corm-section-s">
+                  Выведенный корм
+                </label>
+              </div>
+              <label for="email" class="form-email">
+                <p>Email:</p>
+                <input
+                  type="email"
+                  id="email"
+                  pattern=".+@.+..+"
+                  size="30"
+                  placeholder="trolly@yandex.ru"
+                  required
+                />
+              </label>
+              <label for="bday" class="birthday-form">
+                <p>Birthday:</p>
+                <input type="date" name="bday" id="bday"/>
+              </label>
+              <input type="submit" value="Отправить" />
+            </div>
+          </section>
+        </div>
+        <div class="cat-form-images">
+          <img src="resources/img/kitty.jpg" alt="kitty" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

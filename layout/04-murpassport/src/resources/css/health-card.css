@@ -1,0 +1,29 @@
+.health-card {
+  box-sizing: border-box;
+  width: 350px;
+  margin: 7px;
+  padding: 10px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 239, 0, 0.96);
+  font-size: 14px;
+  text-align: center;
+}
+
+.health-card:hover {
+  box-shadow: 0 12px 20px 0 rgba(122, 122, 0, 0.8);
+}
+
+.health-card article {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.health-card li {
+  margin: 3px;
+
+  text-align: left;
+}
