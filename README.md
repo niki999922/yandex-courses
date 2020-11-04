@@ -2,6 +2,7 @@
 Here are practical tasks and their solutions for a one-year course of web development from Yandex especially for ITMO.
 
 Layout:
+
 9) СвиноТиндер
 https://09-pig-tinder-git-niki999922.robot-schoolboy.now.sh/
 
